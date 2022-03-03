@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Permanent+Marker&display=swap');
+
+
+.home__footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: 190px;
+}
+
+.home__footer .social__media {
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.social__media
+.fa-twitter, .fa-instagram,
+.fa-envelope {
+    background-color: #FCA705;
+    padding: .5rem;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+.social__media .fa-facebook-f {
+    background-color: #FCA705;
+    padding: .5rem .8rem;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+.social__media .fa-envelope:hover {
+    color: red;
+}
+
+.social__media .fa-twitter:hover {
+    color: #1DA1F2;
+}
+
+.social__media .fa-facebook-f:hover {
+    color: #4267B2;
+}
+
+.social__media .fa-instagram:hover {
+    color: red;
+}
+
+.home__footer span {
+    font-size: 25px;
+    font-family: 'League Gothic', sans-serif;
+}

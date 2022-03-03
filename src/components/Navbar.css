@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-navbar: #FCA705;
+    --fontSize-icon-1: 20px;
+    --fontSize-icon-2: 22px;
+    --fontSize-scrolling-text: 30px;
+    --fontSize-shop-name: 40px;
+}
+
+.horizontal__scrolling--text {
+    font-size: var(--fontSize-scrolling-text);
+    background-color: var(--color-navbar);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-weight: 600;
+    padding: 2rem 0;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.shop__logo button {
+    font-size: var(--fontSize-shop-name);
+    text-shadow: 3px var(--color-navbar);
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+
+/* .shop__logo img {
+    width: 100px;
+} */
+
+.nav__middle {
+    display: flex;
+    gap: 1rem;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.nav__menu {
+    width: 40%;
+}
+
+.nav__menu ul {
+    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__menu ul li {
+    list-style: none;
+    font-size: 25px;
+}
+
+.form-outline {
+    display: flex !important;
+    width: 80% !important;
+    height: 42px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 20px !important;
+    width: 60%;
+    border-right: none !important;
+}
+
+.form-outline input[type=search] {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none !important;
+    outline: none !important;
+    font-size: 20px;
+}
+
+.form-outline .btn {
+    background-color: #FCA705;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: none !important;
+    border-bottom-left-radius: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-outline .btn .fa-magnifying-glass {
+    font-size: var(--fontSize-icon-2);
+}
+
+.nav__right {
+    display: flex;
+    gap: .5rem;
+}
+
+.btn-custom {
+    border: 1px solid;
+    font-size: 22px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.btn-custom:hover {
+    background-color: #000;
+    border: none;
+    color: var(--color-navbar);
+}

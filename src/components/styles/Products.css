@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Permanent+Marker&display=swap');
+
+
+.single__card {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.single__card:hover {
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.cards h1 {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.cards h1 span {
+    color: #FCA705;
+}
+
+.card {
+    text-align: center;
+}
+
+.card-body span {
+    color: #FCA705;
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card__buttons .btn {
+    border: 1px solid;
+    font-size: 22px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    background-color: #000;
+}
+
+.card__buttons .btn .fa-cart-arrow-down:hover {
+    transform: rotate(20deg);
+    transition: all .3s ease;
+}
+
+.card__buttons .btn .fa-magnifying-glass:hover {
+    transform: rotate(25deg);
+    transition: all .3s ease;
+}
