@@ -132,8 +132,9 @@ table tr td {
 
 /* ======================================================== */
 
-.table-2 {
+.table__footer {
     width: 100%;
+    background-color: white;
 }
 
 .mt {

@@ -64,20 +64,22 @@ const ShoppingCart = () => {
                     </tr>
                 </tbody>
             </table>
-            <table class="table-2">
-                <tr>
-                    <td class="mt">
-                        <span>Total : </span>
-                        <p><span class="star">*</span>Shopping costs are not included for now</p>
-                    </td>
-                    <td class="mt">
-                        <button class="msg1">Continue shopping</button>
-                    </td>
-                    <td class="mt">
-                        <button class="msg2">Confirm my order</button>
-                    </td>
-                </tr>
-            </table>
+            <div className="table__footer">
+                <table class="table-2">
+                    <tr>
+                        <td class="mt">
+                            <span>Total : </span>
+                            <p><span class="star">*</span>Shopping costs are not included for now</p>
+                        </td>
+                        <td class="mt">
+                            <button class="msg1">Continue shopping</button>
+                        </td>
+                        <td class="mt">
+                            <button class="msg2">Confirm my order</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     )
 }

@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import App from './App';
 import allReducers from './reducers'
 import {createStore} from 'redux';
+import { BrowserRouter } from 'react-router-dom';
 
 const myStore = createStore(
     allReducers,
@@ -13,7 +14,9 @@ const myStore = createStore(
 
 ReactDOM.render(
   <Provider store={myStore} >
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Provider>,
   document.getElementById('root')
 );

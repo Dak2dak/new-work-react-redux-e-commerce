@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Products from './Products';
+import Aside from '../Aside';
 
 const Home = () => {
 
@@ -9,6 +10,7 @@ const Home = () => {
         <div className='container-fluid'>
             <div className="row">
                 <div className="col-sm-12">
+                    <Aside />
                     <Products />
                 </div>
             </div>

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgb(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --box-shadow: 0 2rem 3rem  var(--color-light);
+    --padding-1: 2rem;
+    --padding-2: 1.5rem;
+    --padding-3: .5rem;
+    --margin-1: 3rem;
+    --margin-2: 1.2rem;
+    --margin-3: 1rem;
+    --margin-4: .5rem;
+    --flex-gap-1: .8rem;
+    --flex-gap-2: 1.2rem;
+    --flex-gap-3: 2rem;
+
+    --border-radius: 2rem;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-background);
+}
+
+/* =========================== START ASIDE BAR ============================== */
+
+aside {
+    background-color: var(--color-white);
+    margin: var(--margin-2) var(--margin-1) 0;
+    width: 18%;
+    height: 65vh;
+}
+
+aside .articles {
+    display: flex;
+    flex-direction: column;
+    gap: var(--flex-gap-3);
+    padding-left: var(--padding-1);
+    padding-top: var(--padding-2);
+}
+
+aside .articles button {
+    list-style: none;
+    text-decoration: none;
+    color: var(--color-dark);
+    display: flex;
+    gap: var(--flex-gap-1);
+    font-weight: 600;
+    transition: all .3s ease;
+    border: none;
+    outline: none;
+    width: 90%;
+}
+
+aside .articles button:hover {
+    margin-left: var(--margin-3);
+    background-color: var(--color-background);
+    border-radius: var(--border-radius);
+    color: var(--color-primary);
+}
+
+.icon-box {
+    width: 30px;
+    border-right: 2px solid var(--color-dark);
+}
+
+/* =========================== END ASIDE BAR ============================== */
