@@ -2,7 +2,8 @@ import React from 'react';
 import '../styles/Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Products from './Products';
-import Aside from '../Aside';
+import Aside from '../layout/Aside';
+import ContactUs from './ContactUs';
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
                 <div className="col-sm-12">
                     <Aside />
                     <Products />
+                    <ContactUs />
                 </div>
             </div>
 

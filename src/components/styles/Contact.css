@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Permanent+Marker&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark: #363949;
+}
+
+.form__view {
+    font-family: 'League Gothic', sans-serif;
+}
+
+.form__view h1 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.form__view h1 span {
+    color: #FCA705;
+}
+
+.form__view .contact__form .selectMe {
+    width: 5%;
+}
+
+.form__view .contact__form .mydiv {
+    width: 15%;
+    font-size: 25px;
+}
+
+.form__view .contact__form .front__div {
+    width: 60%;
+}
+
+.mb-3 {
+    display: flex;
+    gap: 3rem;
+}
+
+.contact__form .check__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.check__box label {
+    font-size: 20px;
+}
+
+.mb-3 .selectMe {
+    width: 25% !important;
+    font-size: 20px;
+}
+
+.message__box {
+    font-size: 25px;
+}
+
+.message__box .text__front--div {
+    padding-left: 2rem;
+    margin-left: 1.5rem;
+}
+
+.message__box .text__front--div .form__send--btn {
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    padding: .2rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 22px;
+    color: var(--color-dark);
+    background-color: #fff;
+    border: 1px solid var(--color-dark);
+}
+
+.message__box .text__front--div .form__send--btn:hover {
+    background-color: black;
+    cursor: pointer;
+    color: #FCA705;
+}
+
+::placeholder {
+    font-size: 20px !important;
+}
