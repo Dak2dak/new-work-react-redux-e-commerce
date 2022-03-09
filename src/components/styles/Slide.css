@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main__slide {
+    margin-top: 3rem;
+}
+
+.carousel {
+    text-align: center;
+}
+
+.carousel .slider-wrapper {
+    width: 50% !important; 
+}
+
+.carousel .thumb {
+    width: 5%;
+    height: 50px;
+}
+
+.carousel .control-dots .dot {
+    border-radius: 15% !important;
+    width: 35px !important;
+    height: 4px !important;
+}
+
+.carousel .control-prev.control-arrow {
+    left: 27% !important;
+}
+
+.carousel .control-next.control-arrow {
+    right: 27% !important;
+}
+
+.carousel .carousel-status {
+    position: relative !important;
+    display: none !important;
+}

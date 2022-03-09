@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Products from './Products';
 import Aside from '../layout/Aside';
 import ContactUs from './ContactUs';
+import CarouselComponent from './CarouselComponent'
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
             <div className="row">
                 <div className="col-sm-12">
                     <Aside />
+                    <CarouselComponent />
                     <Products />
                     <ContactUs />
                 </div>
