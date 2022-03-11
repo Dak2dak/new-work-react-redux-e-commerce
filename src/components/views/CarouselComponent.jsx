@@ -11,13 +11,13 @@ const CarouselComponent = () => {
         return (
             <Carousel className='main__slide'>
                 <div>
-                    <img src={myImage1} alt='takeALook' width={300} height={200} />
+                    <img src={myImage1} alt='takeALook' width={300} height={362} />
                 </div>
                 <div>
-                    <img src={myImage2} alt='takeALook' width={300} height={200} />
+                    <img src={myImage2} alt='takeALook' width={300} height={362} />
                 </div>
                 <div>
-                    <img src={myImage3} alt="takeALook" width={300} height={200} />
+                    <img src={myImage3} alt="takeALook" width={300} height={362} />
                 </div>
             </Carousel>
         );

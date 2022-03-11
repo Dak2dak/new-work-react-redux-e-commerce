@@ -1,10 +1,8 @@
 import React from 'react';
 import '../styles/Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Products from './Products';
-import Aside from '../layout/Aside';
-import ContactUs from './ContactUs';
-import CarouselComponent from './CarouselComponent'
+import LayoutComponent from '../layout/LayoutComponent';
+
 
 const Home = () => {
 
@@ -12,10 +10,7 @@ const Home = () => {
         <div className='container-fluid'>
             <div className="row">
                 <div className="col-sm-12">
-                    <Aside />
-                    <CarouselComponent />
-                    <Products />
-                    <ContactUs />
+                    <LayoutComponent />
                 </div>
             </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../layout/Navbar.css';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavBar = () => {
@@ -20,8 +20,12 @@ const NavBar = () => {
                         <div className="nav__middle">
                             <div className="nav__menu">
                                 <ul>
-                                    <li>Products</li>
-                                    <li>Contact us</li>
+                                    <li>
+                                        <Link to='/Products'>Products</Link>
+                                    </li>
+                                    <li>
+                                        <Link to='/ContactUs'>Contact us</Link>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="input-group">
