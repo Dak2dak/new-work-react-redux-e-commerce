@@ -25,11 +25,13 @@
     padding: 2rem 0;
 }
 
+.nav-div {
+    background-color: white;
+}
 
 .navbar {
     display: flex;
     align-items: center;
-    background-color: white;
 }
 
 .shop__logo button {
