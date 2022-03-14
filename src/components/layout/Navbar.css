@@ -15,14 +15,32 @@
 }
 
 .horizontal__scrolling--text {
-    font-size: var(--fontSize-scrolling-text);
-    background-color: var(--color-navbar);
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    font-weight: 600;
     padding: 2rem 0;
+    align-items: center;
+    background-color: var(--color-navbar);
+}
+
+.scroll {
+    width: 98%;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.horizontal__scrolling--text span {
+    font-weight: 600;
+    position: relative;
+    font-size: var(--fontSize-scrolling-text);
+    animation: myhorizontalscroll 10s infinite;
+}
+
+@keyframes myhorizontalscroll {
+    from {left: 0;}
+    to {left: 100%;}
 }
 
 .nav-div {

@@ -10,7 +10,9 @@ const NavBar = () => {
             <div className="row">
                 <div className="col-sm-12">
                     <div className="horizontal__scrolling--text">
-                        <span>THE BEST ONLINE SHOP OF IVORY COAST</span>
+                        <div className="scroll">
+                            <span>THE BEST ONLINE SHOP OF IVORY COAST</span>
+                        </div>
                     </div>
                     <div className="container-fluid nav-div">
                         <nav className="navbar container">
