@@ -1,0 +1,24 @@
+
+.fixed__button {
+    position: fixed;
+    bottom: 8%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fixed__button .floating {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: #FCA705;
+}
+
+.fixed__button .floating .fa-arrow-up {
+    font-size: 22px;
+    color: #fff;
+}
