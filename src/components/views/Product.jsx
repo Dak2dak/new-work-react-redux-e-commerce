@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Product = (props) => {
     const {products} = props;
-
+    
     return (
         <div className='list'>
             {products.map((product) => 
@@ -17,8 +17,10 @@ const Product = (props) => {
                                     <img className="card-img-top" src={product.image} alt="Oups!" />
                                 </div>
                                 <div className="card-body">
-                                    <h5 className="card-title"> {product.title} </h5>
-                                    <span> $ {product.price} </span>
+                                    <div className="prod__name">
+                                        <h5 className="card-title"> {product.title} </h5>
+                                    </div>
+                                    <span> {product.price} €</span>
                                     <div className="card__buttons">
                                         <button className="btn"><i className="fa-solid fa-magnifying-glass"></i></button>
                                         <button className="btn"><i className="fa-solid fa-cart-arrow-down"></i></button>

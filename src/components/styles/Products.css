@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Permanent+Marker&display=swap');
 
 
+.list {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .single__card {
     font-family: 'Permanent Marker', cursive;
-    margin: .5rem;
+    margin: .5rem 0;
 }
 
 .card {
@@ -13,7 +21,18 @@
 
 .card-title {
     color: black !important;
-    text-decoration: none !important;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 25px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body span {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .single__card:hover {
@@ -31,11 +50,26 @@
 }
 
 .card {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-body span {
     color: #FCA705;
+}
+
+.prod__name {
+    max-width: 200px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.prod__name:hover {
+    cursor: pointer;
+    max-width: none;
+    overflow: visible;
 }
 
 .card__buttons {
@@ -73,12 +107,6 @@
     justify-content: space-between;
 }
 
-.list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2rem 0;
-}
-
 .card-img-box {
     text-align: center;
     height: 60%;
@@ -87,8 +115,4 @@
 .card-img-top {
     height: 100% !important;
     object-fit: contain;
-}
-
-.cards {
-    
 }

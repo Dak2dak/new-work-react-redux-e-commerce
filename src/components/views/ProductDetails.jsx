@@ -19,7 +19,7 @@ const ProductDetails = () => {
             ) : (
                 <div className='card__details'>
                     <div className="card" style={{width: "18rem"}}>
-                        <img className="card-img-top" src={product.title} alt={product.title} />
+                        <img className="card-img-top" src={product.image} alt={product.image} />
                         <div className="card-body">
                             <h5 className="card-title">Description</h5>
                             <p className="card-text">
