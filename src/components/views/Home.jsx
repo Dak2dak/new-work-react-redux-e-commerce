@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Home.css';
+import ProductList from './ProductList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LayoutComponent from '../layout/LayoutComponent';
 
@@ -11,6 +12,7 @@ const Home = () => {
             <div className="row">
                 <div className="col-sm-12">
                     <LayoutComponent />
+                    <ProductList />
                 </div>
             </div>
 

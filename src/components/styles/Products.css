@@ -3,6 +3,17 @@
 
 .single__card {
     font-family: 'Permanent Marker', cursive;
+    margin: .5rem;
+}
+
+.card {
+    border-radius: 1rem !important;
+    height: 28rem;
+}
+
+.card-title {
+    color: black !important;
+    text-decoration: none !important;
 }
 
 .single__card:hover {
@@ -55,4 +66,29 @@
 .card__buttons .btn .fa-magnifying-glass:hover {
     transform: rotate(25deg);
     transition: all .3s ease;
+}
+
+.card__details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.card-img-box {
+    text-align: center;
+    height: 60%;
+}
+
+.card-img-top {
+    height: 100% !important;
+    object-fit: contain;
+}
+
+.cards {
+    
 }

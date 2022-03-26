@@ -5,7 +5,7 @@ const ShoppingCart = () => {
 
     return (
         <div className='cart-body'>
-            <h1 class="cart-title">Votre <span class="orange-title">Panier</span></h1>
+            <h1 className="cart-title">Votre <span className="orange-title">Panier</span></h1>
             <table>
                 <thead>
                     <tr>
@@ -19,63 +19,63 @@ const ShoppingCart = () => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="cell-1">
-                            <img src="./img/picture1.png" alt="Oups!">
+                        <td className="cell-1">
+                            <img src="./img/picture1.png" alt="Oups!" />
                         </td>
                         <td>Air Jordan red</td>
                         <td><span>85</span></td>
                         <td>
-                            <button class="increase_btn">
-                                <span class="increase"><i class="fa-solid fa-plus"></i></span>
+                            <button className="increase_btn">
+                                <span className="increase"><i className="fa-solid fa-plus"></i></span>
                             </button>
-                            <span class="quantity"> 1 </span>
-                            <button class="decrease_btn">
-                                <span class="decrease"><i class="fa-solid fa-minus"></i></span>
+                            <span className="quantity"> 1 </span>
+                            <button className="decrease_btn">
+                                <span className="decrease"><i className="fa-solid fa-minus"></i></span>
                             </button>
                         </td>
                         <td>
-                            <button class="cart-red-btn">
-                                <i class="fa-solid fa-xmark"></i>
+                            <button className="cart-red-btn">
+                                <i className="fa-solid fa-xmark"></i>
                             </button>
                         </td>
-                        <td class="cell-6"> 85 </td>
+                        <td className="cell-6"> 85 </td>
                     </tr>
                     <tr>
-                        <td class="cell-7">
-                            <img src="./img/picture2.jpg" alt="Oups!">
+                        <td className="cell-7">
+                            <img src="./img/picture2.jpg" alt="Oups!" />
                         </td>
                         <td>Air Jordan white</td>
                         <td> 300 </td>
                         <td>
-                            <button class="increase_btn">
-                                <span class="increase"><i class="fa-solid fa-plus"></i></span>
+                            <button className="increase_btn">
+                                <span className="increase"><i className="fa-solid fa-plus"></i></span>
                             </button>
-                            <span class="quantity"> 1 </span>
-                            <button class="decrease_btn">
-                                <span class="decrease"><i class="fa-solid fa-minus"></i></span>
+                            <span className="quantity"> 1 </span>
+                            <button className="decrease_btn">
+                                <span className="decrease"><i className="fa-solid fa-minus"></i></span>
                             </button>
                         </td>
                         <td>
-                            <button class="cart-red-btn">
-                                <span><i class="fa-solid fa-xmark"></i></span>
+                            <button className="cart-red-btn">
+                                <span><i className="fa-solid fa-xmark"></i></span>
                             </button>
                         </td>
-                        <td class="cell-12"> 300 </td>
+                        <td className="cell-12"> 300 </td>
                     </tr>
                 </tbody>
             </table>
             <div className="table__footer">
-                <table class="table-2">
+                <table className="table-2">
                     <tr>
-                        <td class="mt">
+                        <td className="mt">
                             <span>Total : </span>
-                            <p><span class="star">*</span>Shopping costs are not included for now</p>
+                            <p><span className="star">*</span>Shopping costs are not included for now</p>
                         </td>
-                        <td class="mt">
-                            <button class="msg1">Continue shopping</button>
+                        <td className="mt">
+                            <button className="msg1">Continue shopping</button>
                         </td>
-                        <td class="mt">
-                            <button class="msg2">Confirm my order</button>
+                        <td className="mt">
+                            <button className="msg2">Confirm my order</button>
                         </td>
                     </tr>
                 </table>
