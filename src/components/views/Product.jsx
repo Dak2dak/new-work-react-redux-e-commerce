@@ -17,9 +17,10 @@ const Product = (props) => {
                                     <img className="card-img-top" src={product.image} alt="Oups!" />
                                 </div>
                                 <div className="card-body">
-                                    <div className="prod__name">
-                                        <h5 className="card-title"> {product.title} </h5>
-                                    </div>
+                                    <h5>
+                                        { (product.title.length > 10) ? 
+                                            product.title.substring(0, 13) + '...'  : product.title }
+                                    </h5>
                                     <span> {product.price} €</span>
                                     <div className="card__buttons">
                                         <button className="btn"><i className="fa-solid fa-magnifying-glass"></i></button>
