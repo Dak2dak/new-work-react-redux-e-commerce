@@ -9,6 +9,10 @@
     --color-background: #f6f6f9;
 }
 
+.layout-container {
+    display: flex;
+}
+
 .top-layout {
     display: flex;
     margin-bottom: 2rem;
@@ -21,13 +25,14 @@
 }
 
 .middleside {
-    width: 64%;
+    width: 62%;
 }
 
 .rightside {
-    width: 18%;
+    width: 20%;
     display: flex;
     flex-direction: column;
+    margin-left: 3rem;
 }
 
 .rightside__box {
