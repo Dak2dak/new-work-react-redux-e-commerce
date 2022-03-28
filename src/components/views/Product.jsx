@@ -2,12 +2,18 @@ import React from 'react';
 import '../styles/Products.css';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import SkeletonElement from "./SkeletonElement";
 
 const Product = (props) => {
     const {products} = props;
     
     return (
         <div className='list'>
+
+            {/* <SkeletonElement type="Text" />
+            <SkeletonElement type="title" />
+            <SkeletonElement type="rectangle" /> */}
+
             {products.map((product) => 
                 (
                     <Link to={`/product/${product.id}`} >
@@ -21,7 +27,7 @@ const Product = (props) => {
                                         { (product.title.length > 10) ? 
                                             product.title.substring(0, 13) + '...'  : product.title }
                                     </h5>
-                                    <span> {product.price} €</span>
+                                    <span> {product.price} € </span>
                                     <div className="card__buttons">
                                         <button className="btn"><i className="fa-solid fa-magnifying-glass"></i></button>
                                         <button className="btn"><i className="fa-solid fa-cart-arrow-down"></i></button>

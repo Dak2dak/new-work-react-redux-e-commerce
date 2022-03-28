@@ -43,7 +43,7 @@ aside {
     background-color: var(--color-white);
     font-size: 19px;
     width: 80%;
-    height: 51.2vh;
+    height: 55.2vh;
 }
 
 aside .articles {
@@ -60,18 +60,18 @@ aside .articles button {
     color: var(--color-dark);
     display: flex;
     gap: var(--flex-gap-1);
-    font-weight: 600;
     transition: all .3s ease;
     border: none;
     outline: none;
     width: 90%;
+    background-color: var(--color-white);
 }
 
 aside .articles button:hover {
     margin-left: var(--margin-3);
     background-color: var(--color-background);
     border-radius: var(--border-radius);
-    color: var(--color-primary);
+    color: var(--color-navbar);
 }
 
 .icon-box {
