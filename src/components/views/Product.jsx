@@ -16,7 +16,7 @@ const Product = (props) => {
 
             {products.map((product) => 
                 (
-                    <Link to={`/product/${product.id}`} >
+                    <Link to={`/product/${product.id}`} className="remove__text-decoration" >
                         <div className='single__card' key={product.id}>
                             <div className="card" style={{width: "18rem"}}>
                                 <div className="card-img-box">

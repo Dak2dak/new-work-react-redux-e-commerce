@@ -3,6 +3,7 @@ import '../layout/Navbar.css';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 const NavBar = () => {
 
     return (
@@ -18,16 +19,16 @@ const NavBar = () => {
                         <nav className="navbar container">
                             <div className="shop__logo">
                                 <button>Dak-shop</button>
-                                {/* <img src={require("../images/logo.jpg")} alt="" /> */}
+                                <img src={require("../../images/logo.jpg")} alt="logo" />
                             </div>
                             <div className="nav__middle">
                                 <div className="nav__menu">
                                     <ul>
                                         <li>
-                                            <Link to='/Products'>Products</Link>
+                                            <Link to='/Products' className='remove__text-decoration clr-black'>Products</Link>
                                         </li>
                                         <li>
-                                            <Link to='/ContactUs'>Contact us</Link>
+                                            <Link to='/ContactUs' className='remove__text-decoration clr-black'>Contact us</Link>
                                         </li>
                                     </ul>
                                 </div>

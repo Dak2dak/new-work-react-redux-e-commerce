@@ -118,3 +118,6 @@
     cursor: pointer;
 }
 
+.remove__text-decoration {
+    text-decoration: none;
+}
