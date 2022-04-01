@@ -17,10 +17,12 @@ const NavBar = () => {
                     </div>
                     <div className="container-fluid nav-div">
                         <nav className="navbar container">
-                            <div className="shop__logo">
-                                <button>Dak-shop</button>
-                                <img src={require("../../images/logo.jpg")} alt="logo" />
-                            </div>
+                                <div className="shop__logo">
+                                    <Link to={`/`}>
+                                        <button>Dak-shop</button>
+                                    </Link>
+                                    <img src={require("../../images/logo.jpg")} alt="logo" />
+                                </div>
                             <div className="nav__middle">
                                 <div className="nav__menu">
                                     <ul>
@@ -32,21 +34,21 @@ const NavBar = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="input-group">
-                                    <div class="form-outline">
-                                        <input type="search" id="form1" class="form-control" placeholder='Search...' />
-                                        <button type="button" class="btn">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                <div className="input-group">
+                                    <div className="form-outline">
+                                        <input type="search" id="form1" className="form-control" placeholder='Search...' />
+                                        <button type="button" className="btn">
+                                            <i className="fa-solid fa-magnifying-glass"></i>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div className="nav__right">
                                 <button className='btn btn-custom'>
-                                    Cart <i class="fa-solid fa-cart-arrow-down"></i>
+                                    Cart <i className="fa-solid fa-cart-arrow-down"></i>
                                 </button>
                                 <button className='btn btn-custom'>
-                                    Login <i class="fa-solid fa-user"></i>
+                                    Login <i className="fa-solid fa-user"></i>
                                 </button>
                             </div>
                         </nav>

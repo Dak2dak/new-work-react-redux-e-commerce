@@ -1,52 +1,70 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import '../styles/Products.css';
+import React, { useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import '../styles/Details.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { getSingleProduct } from '../../actions/products';
+
 
 const ProductDetails = () => {
 
-    const products = useSelector((state) =>state.products.products)
-    const {productId} = useParams(); 
+    let product = {};
+    const id = useParams().id; 
+    const products = useSelector((state) =>state.products.products);
 
-    const product = products.find(product => product.id === productId)
+    if(products) {
+        product = products.find(product => product.id === parseInt(id));
+    }
 
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(getSingleProduct())
+    }, [dispatch]);
+
+    const navigate = useNavigate();
+    const getBack = () => {
+        navigate('/')
+    }
     
     return (
         <div>
-            {Object.keys(product).length === 0 ? (
+            {Object.keys(products).length === 0 ? (
                 <div> ...loading </div>
             ) : (
-                <div className='card__details'>
-                    <div className="card" style={{width: "18rem"}}>
-                        <img className="card-img-top" src={product.image} alt={product.image} />
-                        <div className="card-body">
-                            <h5 className="card-title">Description</h5>
-                            <p className="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                            nihil enim obcaecati ullam odit? Tenetur dicta, unde fugiat eaque
-                            deserunt ad magni distinctio aliquam quis. Voluptatem quasi rerum
-                            deserunt reiciendis perferendis veniam, sit odio cumque quo.
-                            Doloribus ab possimus, maxime incidunt animi accusantium fugiat
-                            assumenda quasi sapiente laboriosam rerum dolore?
-                            </p>
+                (product) ? (
+                    <div className='container card__details'>
+                    <div className="product__pg">
+                        <div className="product-img-box">
+                            <img className="product-img" src={product.image} alt={product.image} />
+                        </div>
+                        <div className="product-body">
+                            <h5 className="product-title-1">Description</h5>
+                            <p className="product-text"> {product.description} </p>
                         </div>
                     </div>
-                    <div className="card border-dark mb-3" style={{ maxWidth: "18rem" }}>
-                        <div className="card-header"> {product.title} </div>
+        
+                    <div className="product">
+                        <div className="card-header"> 
+                                { (product.title.length > 10) ? 
+                                    product.title.substring(0, 13) + '...'  : product.title }
+                        </div>
                         <div className="card-body text-dark">
-                            <h5 className="card-title"> {product.price} </h5>
+                            <h5 className="product-title-2">price: {product.price} €</h5>
                             <div className='card__buttons'>
-                                <button className='btn'> 
+                                <button className="product-btn"> 
                                     Buy 
                                 </button>
-                                <button className='btn'> 
+                                <button 
+                                    className="product-btn" 
+                                    onClick={getBack}
+                                > 
                                     Back 
                                 </button>
                             </div>
                         </div>
                     </div>
-                </div>
+                    </div>
+                ) : ("")
             )}
         </div>
     );

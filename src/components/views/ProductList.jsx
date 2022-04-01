@@ -6,7 +6,7 @@ import '../styles/Products.css';
 const ProductList = () => {
   
   const products = useSelector((state) => state.products.products);
-
+  
   return (
     <div className="container cards">
       <h1>

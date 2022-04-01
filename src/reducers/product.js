@@ -1,4 +1,4 @@
-import { ADD_PRODUCT, GET_PRODUCT } from "../actions/types";
+import { ADD_PRODUCT, GET_PRODUCT, GET_SINGLE_PRODUCT } from "../actions/types";
 
 const initialState = {
   products: [],
@@ -11,7 +11,14 @@ export function products(state = initialState, action) {
     case GET_PRODUCT:
       return {
         ...state,
-        products: payload,
+        products: payload
+      };
+    case GET_SINGLE_PRODUCT:
+      return {
+        ...state,
+        products: [
+          state.products.find((product) => product.id === payload)
+        ]
       };
     case ADD_PRODUCT:
       return {

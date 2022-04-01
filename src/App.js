@@ -7,6 +7,7 @@ import GoBack from "./components/layout/GoBack";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getProducts } from "./actions/products";
+import ProductDetails from "./components/views/ProductDetails";
 
 function App() {
 
@@ -21,6 +22,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route>404 not Found!</Route>
       </Routes>
       <GoBack />
     </div>
